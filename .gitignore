@@ -11,3 +11,26 @@ node_modules/
 
 # Logs
 *.log
+
+# --- Secrets & local config (added 2026-07-28 security review) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*.ppk
+.netrc
+.npmrc
+.pypirc
+credentials.json
+service-account*.json
+secrets.y*ml
+
+# Agent / editor local state
+.claude/
+.vscode/
+.idea/
